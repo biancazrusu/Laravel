@@ -1,0 +1,16 @@
+$main-font-color: #999;
+$secondary-font-color: #00e777;
+$main-font: 'VisbyCF-Medium';
+$main-font-size: 36px;
+$secondary-font-size: 24px;
+$third-font-size: 18px;
+$yellow: #fef23e;
+
+//Mixins
+@mixin custom-transition() {
+    -webkit-transition: all .15s linear;
+   -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+     -o-transition: all .3s linear;
+        transition: all .3s linear;
+}

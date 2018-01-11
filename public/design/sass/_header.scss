@@ -1,0 +1,63 @@
+.logo {
+    margin-right: 15px;
+    span {
+        font-size: 42px;
+        @media (max-width: 991px) {
+            font-size: 21px;
+        }
+        line-height: 1;
+        float: left;
+        &.logo-font-light {
+            color: #000;
+            font-family: 'VisbyCF-Light';
+            &:first-child {
+                display: block;
+                float: none;
+            }
+        }
+        &.logo-font-bold {
+            color: $secondary-font-color;
+            font-family: 'VisbyCF-Bold';
+        }
+    }
+}
+.logo, .breadcrumbs {
+    display: inline-block;
+}
+.header-right {
+    float: right;
+    margin-top: 10px;
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
+    a {
+        display: inline-block;
+        &.login {
+            margin-right: 40px;
+            @media (max-width: 991px) {
+                margin-right: 0;
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+        i {
+            font-size: 32px;
+            display: inline-block;
+            margin-right: 15px;
+            @media (max-width: 991px) {
+                font-size: 16px;
+                margin-right: 0;
+            }
+            @include custom-transition;
+        }
+        i, span {
+            color: $secondary-font-color;
+            vertical-align: middle;
+        }
+        &:hover {
+            i {
+                color: darken($secondary-font-color, 15%)
+            }
+        }
+    }
+}
